@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Microsoft</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Segou+UI:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segou UI', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding: 40px;
+        }
+        .Card-Place{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .Cards{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .Container{
+            background-color: #ffffff;
+            border-radius: 5px;
+            overflow:hidden;
+            border: 1px solid #e1e1e1 ;
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Container img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 18px;
+            margin-bottom: 10px;
+        }
+
+        .content h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .content p{
+            font-size: 14px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .Button{
+            display: block;
+            background-color: #1877f2;
+            color: white;
+            text-align: center;
+            padding:  10px;
+            border-radius: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .Button :hover{
+            background-color: #166fe5;
+        }
+        </style>
+    </head>
+    <body>
+        <section class="Card-Place">
+        <div class="Cards">
+            <div id="1st" class="Container">
+                <img src="/Users/frl404/Documents/Codes/Web-Dev/Lab2/images/Content-Card-Copilot-Native-App-ROW.jpeg" alt="Copilot is your AI companion">
+                <div class="content">
+                    <h3>Copilot is your AI companion</h3>
+                    <p>Always by your side, ready to support you whenever and wherever you need it.</p>
+                    <button class="Button">Download the Copilot app</button>
+                </div>
+            </div>
+            <div id="2nd" class="Container">
+                <div class="content">
+                    <img src="/Users/frl404/Documents/Codes/Web-Dev/Lab2/images/Content-Card-Surface-Laptop-AI-7Ed-Sapphire-MC001.jpeg" alt="Surface Laptop, Copilot+ PC">
+                    <h3>Surface Laptop, Copilot+ PC</h3>
+                    <p>Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.</p>>
+                    <button class="Button">Shop now</button>
+                </div>
+            </div>
+            <div id="3rd" class="Container">
+                <div class="content">
+                    <img src="/Users/frl404/Documents/Codes/Web-Dev/Lab2/images/Content-Card-Xbox-Wireless-Controller-Pulse-Cipher.jpeg" alt="Red Controller of Xbox">
+                    <h3>Reveal the mysteries within</h3>
+                    <p>Get the Xbox Wireless Controller – Pulse Cipher, featuring a transparent red design, silver interior, metallic features, and more.</p>>
+                    <button class="Button">Pre-order now</button>
+                </div>
+            </div>
+            <div id="4th" class="Container">
+                <div class="content">
+                    <img src="/Users/frl404/Documents/Codes/Web-Dev/Lab2/images/gldn-XSS-CP-Xbox-Series-S-Evergreen.jpeg" alt="Xbox Series S">
+                    <h3>Xbox Series S</h3>
+                    <p>Next-gen performance in smallest Xbox ever.</p>>
+                    <button class="Button">Shop Xbox Series S</button>
+                </div>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>

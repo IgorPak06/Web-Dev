@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 980px;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .logo {
+            color: #1877f2;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .loginbox {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .loginbox input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .loginbutton {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .loginbutton:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot-password {
+            display: block;
+            color: #1877f2;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            border: 0.5px solid #ddd;
+            margin: 15px 0;
+        }
+
+        .create-account {
+            width: 100%;
+            padding: 12px;
+            background-color: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .create-account:hover {
+            background-color: #36a420;
+        }
+
+        .create-page {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        .create-page a {
+            color: #1877f2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        </style>
+    </head>
+    <body>
+    <div id="info" class="container">
+        <div class="left-section">
+            <h1 class="logo">facebook</h1>
+            <p class="subtitle">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="right-section">
+            <div class="loginbox">
+                        <input type="text" placeholder="Электронная почта или номер телефона">
+                        <input type="password" placeholder="Пароль">
+                        <button class="loginbutton">Вход</button>
+                        <a href="" class="forgot-password">Забыли пароль?</a>
+                        <hr>
+                        <button class="create-account">Создать новый аккаунт</button>
+            </div>
+            <p class="create-page">
+                <a href="#">Создать Страницу</a> знаменитости, музыкальной группы или компании.
+            </p>
+        </div>
+    </div>
+    </body>
+</html>
