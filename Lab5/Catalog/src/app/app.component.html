@@ -1,0 +1,13 @@
+<h1>Select a Category</h1>
+
+<div class="category-list">
+  <button *ngFor="let category of categories" (click)="selectCategory(category)">
+    {{ category.name }}
+  </button>
+</div>
+
+<app-product-list 
+  *ngIf="selectedProducts.length > 0" 
+  [products]="selectedProducts" 
+  (removeProduct)="removeProduct($event)">
+</app-product-list>

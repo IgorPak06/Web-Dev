@@ -1,0 +1,16 @@
+<div class="product-card">
+        <a [href]="product.link" target="_blank">
+        <img [src]="product.image" [alt]="product.name" class="product-image" />
+        </a>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Rating: ⭐ {{ product.rating }}</p>
+    
+        <button (click)="likeProduct()">❤️ Like ({{ likeCount }})</button>
+        <button (click)="remove.emit()">🗑 Remove</button>
+    
+        <div class="share-buttons">
+            <a [href]="'https://api.whatsapp.com/send?text=' + encodeLink(product.link)" target="_blank">WhatsApp</a>
+            <a [href]="'https://t.me/share/url?url=' + encodeLink(product.link)" target="_blank">Telegram</a>
+        </div>
+    </div>
