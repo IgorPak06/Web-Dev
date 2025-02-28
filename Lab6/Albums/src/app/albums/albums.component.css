@@ -1,0 +1,25 @@
+ul {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  button {
+    font-family: 'Roboto', sans-serif;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+  }
