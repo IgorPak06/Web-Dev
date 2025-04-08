@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Company Directory</h1>
+  
+    <div class="company-list">
+      <h2>Companies</h2>
+      <ul>
+        <li *ngFor="let company of companies" (click)="selectCompany(company.id)">
+          <div class="company-card" [class.active]="company.id === selectedCompanyId">
+            <h3>{{ company.name }}</h3>
+            <p>{{ company.city }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="vacancy-list" *ngIf="vacancies.length > 0">
+      <h2>Vacancies</h2>
+      <ul>
+        <li *ngFor="let vacancy of vacancies">
+          <div class="vacancy-card">
+            <h4>{{ vacancy.name }}</h4>
+            <p>{{ vacancy.description }}</p>
+            <span class="salary">{{ vacancy.salary | currency:'USD' }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
